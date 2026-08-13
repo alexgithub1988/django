@@ -1,5 +1,6 @@
 Библиотеки
 pip install -r requirements.txt
+\n
 Миграции
 python manage.py migrate
 Добавить категории 
