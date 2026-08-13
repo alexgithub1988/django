@@ -1,0 +1,19 @@
+{% extends 'store/base.html' %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h1>{{ product.name }}</h1>
+        <p><strong>Категория:</strong> {{ product.category.name }}</p>
+        <p><strong>Цена:</strong> {{ product.price }} руб.</p>
+        <p><strong>Дата создания:</strong> {{ product.created_at }}</p>
+        <p><strong>Описание:</strong></p>
+        <p>{{ product.description }}</p>
+        
+        <a href="{% url 'product_list' %}" class="btn btn-secondary">Назад к списку</a>
+        <a href="{% url 'product_update' product.id %}" class="btn btn-primary">Редактировать</a>
+    </div>
+</div>
+{% endblock %}
