@@ -1,8 +1,8 @@
 Библиотеки
-'pip install -r requirements.txt'
+```pip install -r requirements.txt```
 
 Миграции
-python manage.py migrate
+```python manage.py migrate```
 
 Добавить категории 
 ```
@@ -19,5 +19,5 @@ python manage.py shell
 
 
 Старт
-python manage.py runserver
+```python manage.py runserver```
 
