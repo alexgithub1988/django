@@ -5,6 +5,7 @@
 python manage.py migrate
 
 Добавить категории 
+```
 python manage.py shell
 
 
@@ -14,6 +15,7 @@ python manage.py shell
 
 
 >>> exit()
+```
 
 
 Старт
